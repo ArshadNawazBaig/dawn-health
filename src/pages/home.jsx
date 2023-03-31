@@ -5,6 +5,7 @@ import GetStarted from '../components/GetStarted';
 import Heading from '../components/Heading';
 import Para from '../components/Para';
 import { SectionHeader } from '../components/SectionHeader';
+import TestimonialCard from '../components/TestimonialCard';
 import ValueCard from '../components/ValuesCard';
 import { Hero, HomePageWrapper, SectionWrapper } from '../styles';
 import Main from './../assets/home/1.png';
@@ -48,9 +49,8 @@ const HomePage = () => {
               <iframe
                 width="100%"
                 height="603"
-                src="https://www.youtube.com/embed/1xWuk2HWz94"
+                src="https://www.youtube.com/embed/iilnY08udm0"
                 title="YouTube video player"
-                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
               ></iframe>
@@ -131,7 +131,7 @@ const HomePage = () => {
             </Col>
             <Col md={1}></Col>
             <Col md={5}>
-              <Row>
+              <Row className="pb-main">
                 <Col>
                   <SectionHeader className="pb-main" title="Why Dawn Health?">
                     Our care delivery approach eliminates the barriers of time,
@@ -145,14 +145,10 @@ const HomePage = () => {
               </Row>
               <Row>
                 <Col>
-                  <SectionHeader className="pb-main" title="Why Dawn Health?">
-                    Our care delivery approach eliminates the barriers of time,
-                    distance, and stigma that prevent many people from seeking
-                    the help they need. By prioritizing virtual mental health
-                    care, our company is committed to promoting mental wellness
-                    and improving the overall health and engagement of our
-                    members.
-                  </SectionHeader>
+                  <TestimonialCard title="National Council for Mental Wellbeing">
+                    “47% Of School Board Members Say Students’ Mental Health Is
+                    One Of Their Top 3 Issues”
+                  </TestimonialCard>
                 </Col>
               </Row>
             </Col>
