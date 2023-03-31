@@ -1,43 +1,52 @@
 import React from 'react';
-import { Container, Row } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
+import FaqList from '../components/FAQ';
+import Heading from '../components/Heading';
 import Para from '../components/Para';
-import Logo from './../assets/logo/dark-logo.png';
+import { SectionHeader } from '../components/SectionHeader';
+import TeamCard from '../components/TeamCard';
+import { teamMembers } from '../data/team';
+import { Hero, SectionWrapper, FaqPageWrapper } from '../styles';
+import Main from './../assets/faq/1.png';
 
-const Footer = () => {
+const FaqPage = () => {
   return (
-    <FooterWrapper>
-      <Container>
-        <Row>
-          <Col sm={6}>
-            <div>
-              <img src={Logo} alt="Footer logo" />
-            </div>
-            <Para>
-              Nurturing mental health resilience in adolescents for a stronger
-              future.
-            </Para>
-          </Col>
-          <Col sm={2}>
-            <Title>Company</Title>
-            <ReLink>Partners</ReLink>
-            <ReLink>Careers</ReLink>
-            <ReLink>Contact us</ReLink>
-          </Col>
-          <Col sm={2}>
-            <Title>Resources</Title>
-            <ReLink>Services</ReLink>
-            <ReLink>Releases</ReLink>
-          </Col>
-          <Col sm={2}>
-            <Title>Support</Title>
-            <ReLink>FAQs</ReLink>
-            <ReLink>Terms & Conditions</ReLink>
-            <ReLink>Privacy Policy</ReLink>
-          </Col>
-        </Row>
-      </Container>
-    </FooterWrapper>
+    <FaqPageWrapper>
+      <Hero>
+        <Container>
+          <Row className="align-items-center h-100vh">
+            <Col md={6}>
+              <Heading main="FAQ’s">about Our Wellness System</Heading>
+              <Para>
+                Answers to common questions about our approach to wellness and
+                costs associated with it
+              </Para>
+            </Col>
+            <Col md={6} className="text-end">
+              <img src={Main} className="img-fluid" alt="main image" />
+            </Col>
+          </Row>
+        </Container>
+      </Hero>
+      <SectionWrapper>
+        <Container>
+          <Row>
+            <Col md={5}>
+              <SectionHeader className="pb-main" title="FAQ’s">
+                Expertly Crafted Answers to Your Mental Wellness Related
+                Questions
+              </SectionHeader>
+            </Col>
+          </Row>
+          <Row className="pb-main">
+            <Col>
+              <FaqList className="mb-3" />
+            </Col>
+          </Row>
+        </Container>
+      </SectionWrapper>
+    </FaqPageWrapper>
   );
 };
 
-export default Footer;
+export default FaqPage;

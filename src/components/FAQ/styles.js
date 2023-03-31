@@ -14,6 +14,7 @@ export const Question = styled.h3`
   line-height: 140%;
   margin-bottom: 0;
   color: #3a3a3a;
+  cursor: pointer;
 `;
 
 export const FaqHeader = styled.div`

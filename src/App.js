@@ -5,6 +5,7 @@ import { Header } from './components/Navbar';
 import useScroll from './hooks/useScroll';
 import AboutPage from './pages/about';
 import Components from './pages/components';
+import FaqPage from './pages/faqs';
 import HomePage from './pages/home';
 import TeamPage from './pages/team';
 import { Body } from './styles';
@@ -29,6 +30,7 @@ function App() {
           <Route exact path="/" element={<HomePage />}></Route>
           <Route exact path="/team" element={<TeamPage />}></Route>
           <Route exact path="/about" element={<AboutPage />}></Route>
+          <Route exact path="/faqs" element={<FaqPage />}></Route>
           <Route exact path="/components" element={<Components />}></Route>
         </Routes>
       </Body>

@@ -17,3 +17,5 @@ export const SectionWrapper = styled.div`
 export const TeamPageWrapper = styled.div``;
 
 export const AboutPageWrapper = styled.div``;
+
+export const FaqPageWrapper = styled.div``;

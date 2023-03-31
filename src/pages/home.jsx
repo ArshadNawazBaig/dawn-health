@@ -1,5 +1,6 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import Button from '../components/Button';
 import GetStarted from '../components/GetStarted';
 import Heading from '../components/Heading';
 import Para from '../components/Para';
@@ -26,6 +27,7 @@ const HomePage = () => {
                 create stronger relationships with their children, help keep
                 them engaged in school, and see them thrive.
               </Para>
+              <Button className="mt-3">Explore More</Button>
             </Col>
             <Col md={6} className="text-end">
               <img src={Main} className="img-fluid" alt="main image" />
