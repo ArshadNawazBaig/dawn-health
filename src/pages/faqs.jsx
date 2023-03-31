@@ -4,8 +4,6 @@ import FaqList from '../components/FAQ';
 import Heading from '../components/Heading';
 import Para from '../components/Para';
 import { SectionHeader } from '../components/SectionHeader';
-import TeamCard from '../components/TeamCard';
-import { teamMembers } from '../data/team';
 import { Hero, SectionWrapper, FaqPageWrapper } from '../styles';
 import Main from './../assets/faq/1.png';
 
