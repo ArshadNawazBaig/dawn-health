@@ -6,7 +6,9 @@ import Input from '../components/Input';
 import Para from '../components/Para';
 import Select from '../components/Select';
 import SubHeading from '../components/SubHeading';
+import TeamCard from '../components/TeamCard';
 import ValueCard from '../components/ValuesCard';
+import { teamMembers } from '../data/team';
 
 const HomePage = () => {
   return (
@@ -32,6 +34,19 @@ const HomePage = () => {
       <Row>
         <Col>
           <SubHeading>Our Wellness Programs</SubHeading>
+        </Col>
+      </Row>
+      <Row>
+        <Col sm={4}>
+          {teamMembers.map((member) => (
+            <TeamCard
+              key={member.id}
+              name={member.name}
+              status={member.status}
+              alt={member.alt}
+              src={member.src}
+            />
+          ))}
         </Col>
       </Row>
       <Row>
