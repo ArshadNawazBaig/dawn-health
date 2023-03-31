@@ -12,6 +12,8 @@ import {
 } from '../styles';
 import Main from './../assets/career/1.png';
 import Main2 from './../assets/career/2.png';
+import Main3 from './../assets/career/3.png';
+import Main4 from './../assets/career/4.png';
 
 const CareerPage = () => {
   return (
@@ -50,7 +52,7 @@ const CareerPage = () => {
               </SectionHeader>
             </Col>
           </Row>
-          <Row className="pb-main">
+          <Row className="pb-main align-items-center">
             <Col md={6}>
               <SectionHeader className="" title="About The Role">
                 Our clinical team members collaborate with other phenomenal
@@ -104,6 +106,110 @@ const CareerPage = () => {
             </Col>
             <Col md={6} className="text-end">
               <img src={Main2} className="img-fluid" alt="main image" />
+            </Col>
+          </Row>
+          <Row className="pb-main align-items-center">
+            <Col md={6} className="text-start">
+              <img src={Main3} className="img-fluid" alt="main image" />
+            </Col>
+            <Col md={6}>
+              <SectionHeader className="" title="About You">
+                You will thrive in the role of Behavioral Therapist at
+                Brightline if you have:
+              </SectionHeader>
+              <List className="pe-5">
+                <ListItem className="pb-3">
+                  A passion for our mission to redefine behavioral health for
+                  children and their families.
+                </ListItem>
+                <ListItem className="pb-3">
+                  3 years of experience practicing independently as an LMFT,
+                  LCSW, LPC, or LMHC without supervision.
+                </ListItem>
+                <ListItem className="pb-3">
+                  Expertise in delivering child and teen-focused CBT,
+                  particularly for anxiety, depression, ADHD, and disruptive
+                  behavior disorders.
+                </ListItem>
+                <ListItem className="pb-3">
+                  Experience in family-centered care models and a warm, engaging
+                  clinical style.
+                </ListItem>
+                <ListItem className="pb-3">
+                  Excellent skills in learning and using new technologies.
+                  Experience with delivery care via telehealth preferred.
+                </ListItem>
+                <ListItem className="pb-3">
+                  The drive to be part of building something new - to work hard,
+                  to be your best self, and to adapt to the constant change and
+                  evolution of a start-up.
+                </ListItem>
+                <ListItem className="pb-3">
+                  Exceptional communication skills (written and verbal) and an
+                  ability to share feedback across teams in a collaborative and
+                  solution-oriented way.
+                </ListItem>
+              </List>
+            </Col>
+          </Row>
+          <Row className="pb-main align-items-center">
+            <Col md={6}>
+              <SectionHeader className="" title="Benefits + Perks">
+                Here at Dawn Health, we believe that benefits should meet you
+                where you're at. Our benefits package includes the following:
+              </SectionHeader>
+              <List className="pe-5">
+                <ListItem className="pb-3">
+                  Therapist-centric and remote-first culture.
+                </ListItem>
+                <ListItem className="pb-3">
+                  Cultural competence training.
+                </ListItem>
+                <ListItem className="pb-3">
+                  Collaborative and supportive therapist community of
+                  like-minded peers.
+                </ListItem>
+                <ListItem className="pb-3">
+                  And for Full-Time [W2] Opportunities:
+                  <List className="mt-3">
+                    <ListItem className="pb-3">
+                      Competitive compensation packages.
+                    </ListItem>
+                    <ListItem className="pb-3">
+                      Medical, dental, and vision insurance.
+                    </ListItem>
+                    <ListItem className="pb-3">
+                      Generous paid time off - including holidays, sick leave,
+                      and vacation.
+                    </ListItem>
+                    <ListItem className="pb-3">
+                      Licensing fees and cross-licensing reimbursement.
+                    </ListItem>
+                    <ListItem className="pb-3">
+                      Malpractice liability insurance.
+                    </ListItem>
+                    <ListItem className="pb-3">Home office equipment.</ListItem>
+                    <ListItem className="pb-3">
+                      Internet & phone stipend.
+                    </ListItem>
+                  </List>
+                </ListItem>
+
+                <ListItem className="pb-3">
+                  And for Contracting [1099] Opportunities:
+                  <List className="mt-3">
+                    <ListItem className="pb-3">
+                      Reimbursement of $75-$80 per session.
+                    </ListItem>
+                    <ListItem className="pb-3">
+                      Malpractice liability insurance.
+                    </ListItem>
+                  </List>
+                </ListItem>
+              </List>
+            </Col>
+            <Col md={6} className="text-end">
+              <img src={Main4} className="img-fluid" alt="main image" />
             </Col>
           </Row>
         </Container>
