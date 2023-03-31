@@ -5,7 +5,7 @@ const Heading = (props) => {
   const { main, className, children } = props;
   return (
     <HeadingWrapper className={className}>
-      <InnerMainHeading>{main}</InnerMainHeading>
+      {main && <InnerMainHeading>{main}</InnerMainHeading>}
       {children}
     </HeadingWrapper>
   );

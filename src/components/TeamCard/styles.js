@@ -3,15 +3,16 @@ import styled from 'styled-components';
 export const TeamCardWrapper = styled.div`
   border-radius: 10px;
   overflow: hidden;
-  background-color: #ffa800;
   & img {
+    background-color: #ffa800;
     width: 100%;
   }
 `;
 
 export const ContentWrapper = styled.div`
-  padding: 25px;
-  background: #9fbdbf;
+  padding: 20px;
+  background: rgba(159, 189, 191, 0.4);
+  height: 140px;
 `;
 
 export const Name = styled.h4`

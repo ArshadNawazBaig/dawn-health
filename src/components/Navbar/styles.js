@@ -2,6 +2,12 @@ import styled from 'styled-components';
 import Nav from 'react-bootstrap/Nav';
 import { Link } from 'react-router-dom';
 
+export const NavbarWrapper = styled.div`
+  & .effix {
+    background-color: #fff !important;
+  }
+`;
+
 export const NavItem = styled(Nav)`
   gap: 30px;
 `;

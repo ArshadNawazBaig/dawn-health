@@ -8,7 +8,7 @@ export const ButtonWrapper = styled.button`
   );
   border: 3px solid rgba(255, 198, 86, 0.75);
   border-radius: 15px;
-  padding: 11px 29px;
+  padding: 15px 29px;
   font-weight: bold;
   font-size: 16px;
   color: #fff;
