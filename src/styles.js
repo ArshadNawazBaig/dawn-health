@@ -19,3 +19,9 @@ export const TeamPageWrapper = styled.div``;
 export const AboutPageWrapper = styled.div``;
 
 export const FaqPageWrapper = styled.div``;
+
+export const CareerPageWrapper = styled.div``;
+
+export const List = styled.ul``;
+
+export const ListItem = styled.li``;

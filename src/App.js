@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import { Header } from './components/Navbar';
 import useScroll from './hooks/useScroll';
 import AboutPage from './pages/about';
+import CareerPage from './pages/career';
 import Components from './pages/components';
 import FaqPage from './pages/faqs';
 import HomePage from './pages/home';
@@ -31,6 +32,7 @@ function App() {
           <Route exact path="/team" element={<TeamPage />}></Route>
           <Route exact path="/about" element={<AboutPage />}></Route>
           <Route exact path="/faqs" element={<FaqPage />}></Route>
+          <Route exact path="/career" element={<CareerPage />}></Route>
           <Route exact path="/components" element={<Components />}></Route>
         </Routes>
       </Body>
