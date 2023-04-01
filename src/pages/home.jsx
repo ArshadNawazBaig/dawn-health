@@ -21,7 +21,7 @@ const HomePage = () => {
     <HomePageWrapper>
       <Hero>
         <Container>
-          <Row className="align-items-center h-100vh">
+          <Row className="align-items-center h-100vh reverse">
             <Col md={6}>
               <Heading main="Mental health">
                 Nurturing Mental Health resilience
@@ -32,10 +32,14 @@ const HomePage = () => {
                 create stronger relationships with their children, help keep
                 them engaged in school, and see them thrive.
               </Para>
-              <Button className="mt-3">Explore More</Button>
+              <Button className="mt-3 mb-3">Explore More</Button>
             </Col>
             <Col md={6} className="text-end">
-              <img src={Main} className="img-fluid" alt="main image" />
+              <img
+                src={Main}
+                className="img-fluid main-image"
+                alt="main image"
+              />
             </Col>
           </Row>
         </Container>
@@ -192,7 +196,7 @@ const HomePage = () => {
           </Row>
         </Container>
       </SectionWrapper>
-      <SectionWrapper>
+      <SectionWrapper className="pt-0">
         <Container>
           <Row>
             <Col>
@@ -203,7 +207,7 @@ const HomePage = () => {
       </SectionWrapper>
       <SectionWrapper>
         <Container>
-          <Row>
+          <Row className="align-items-center">
             <Col md={6}>
               <img src={Main3} className="img-fluid mb-5" alt="main image" />
             </Col>
@@ -223,7 +227,10 @@ const HomePage = () => {
               </Row>
               <Row>
                 <Col>
-                  <TestimonialCard title="National Council for Mental Wellbeing">
+                  <TestimonialCard
+                    title="National Council for Mental Wellbeing"
+                    className="mb-4"
+                  >
                     “47% Of School Board Members Say Students’ Mental Health Is
                     One Of Their Top 3 Issues”
                   </TestimonialCard>

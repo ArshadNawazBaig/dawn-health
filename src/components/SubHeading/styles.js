@@ -6,4 +6,7 @@ export const SubHeadingWrapper = styled.h1`
   font-size: 40px;
   line-height: 140%;
   color: #ffa800;
+  @media (max-width: 992px) {
+    font-size: 30px;
+  }
 `;

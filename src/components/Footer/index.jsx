@@ -1,5 +1,6 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import { FacebookIcon, TwitterIcon, YoutubeIcon } from '../Icons';
 import Para from '../Para';
 import Logo from './../../assets/logo/dark-logo.png';
 import { CopyRight, FooterWrapper, ReLink, Title, Text } from './styles';
@@ -18,6 +19,17 @@ const Footer = () => {
                 Nurturing mental health resilience in adolescents for a stronger
                 future.
               </Para>
+              <div className="mt-4">
+                <a className="me-3" href="http://facebook.com" target="_blank">
+                  <FacebookIcon />
+                </a>
+                <a className="me-3" href="http://youtube.com" target="_blank">
+                  <YoutubeIcon />
+                </a>
+                <a className="me-3" href="http://twitter.com" target="_blank">
+                  <TwitterIcon />
+                </a>
+              </div>
             </Col>
             <Col sm={2}>
               <Title>Company</Title>

@@ -16,7 +16,6 @@ function App() {
   const params = useLocation();
   const { height, width } = useScroll();
   const [active, setActive] = useState(params.pathname);
-  console.log(width);
   useEffect(() => {
     setActive(params.pathname);
   }, [params]);
