@@ -7,18 +7,14 @@ import Para from '../components/Para';
 import { SectionHeader } from '../components/SectionHeader';
 import TestimonialCard from '../components/TestimonialCard';
 import ValueCard from '../components/ValuesCard';
-import {
-  Card,
-  Hero,
-  HomePageWrapper,
-  InnerCard,
-  SectionWrapper,
-  WellnessInner,
-  WellnessWrapper,
-} from '../styles';
+import { Card, Hero, HomePageWrapper, SectionWrapper, Title } from '../styles';
 import Main from './../assets/home/1.png';
 import Main2 from './../assets/home/2.png';
 import Main3 from './../assets/home/3.png';
+import Main4 from './../assets/home/4.png';
+import Main5 from './../assets/home/5.png';
+import Main6 from './../assets/home/6.png';
+import Main7 from './../assets/home/7.png';
 
 const HomePage = () => {
   return (
@@ -94,14 +90,60 @@ const HomePage = () => {
           <Row>
             <Col md={12} className="wellness-wrapper">
               <Row className="wellness-inner">
-                <Col md={3}>1</Col>
-                <Col md={6}>
+                <Col lg={3}>
+                  <Card>
+                    <img src={Main4} className="img-fluid mb-3" alt="main" />
+                    <Title>Biweekly PHQAssessment </Title>
+                    <Para>
+                      Text-based diagnosis tool to measure the severity of
+                      depression and anxiety
+                    </Para>
+                  </Card>
+                </Col>
+                <Col lg={6}>
                   <Row className="inner-card">
-                    <Col>2</Col>
-                    <Col>3</Col>
+                    <Col lg={6}>
+                      <Card className="last-card">
+                        <img
+                          src={Main5}
+                          className="img-fluid mb-3"
+                          alt="main"
+                        />
+                        <Title className="text-white">
+                          Continuous Data Assessment
+                        </Title>
+                        <Para className="text-white">
+                          Tracking & monitoring depression and anxiety symptoms
+                        </Para>
+                      </Card>
+                    </Col>
+                    <Col lg={6}>
+                      <Card className="last-card">
+                        <img
+                          src={Main6}
+                          className="img-fluid mb-3"
+                          alt="main"
+                        />
+                        <Title className="text-white">
+                          Virtual & Prompt Care
+                        </Title>
+                        <Para className="text-white">
+                          System prompt pre-crisis intervention & mental health
+                          resilience therapy
+                        </Para>
+                      </Card>
+                    </Col>
                   </Row>
                 </Col>
-                <Col md={3}>4</Col>
+                <Col lg={3}>
+                  <Card className="last-card">
+                    <img src={Main7} className="img-fluid mb-3" alt="main" />
+                    <Title>Partnering with Parents/Guardians</Title>
+                    <Para>
+                      Parent development through Coping Skills & Peer Community
+                    </Para>
+                  </Card>
+                </Col>
               </Row>
             </Col>
           </Row>

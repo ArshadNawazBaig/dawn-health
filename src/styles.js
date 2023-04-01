@@ -43,7 +43,24 @@ export const WellnessInner = styled.div`
   /* padding: 20px; */
 `;
 
-export const Card = styled.div``;
+export const Card = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding: 20px 0;
+`;
+
+export const Title = styled.h3`
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 140%;
+  text-align: center;
+  color: #3a3a3a;
+`;
 
 export const InnerCard = styled.div`
   margin-top: -60px;
@@ -51,6 +68,9 @@ export const InnerCard = styled.div`
   background: #e8971e;
   box-shadow: 0px 4px 16px rgba(240, 73, 116, 0.13);
   border-radius: 20px 20px 0px 0px;
-  height: 388px;
+  height: calc(100% + 60px);
   padding: 50px 30px;
+  @media (min-width: 992px) {
+    /* margin-top: -60px; */
+  }
 `;
