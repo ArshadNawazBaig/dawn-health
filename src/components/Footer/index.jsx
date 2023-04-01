@@ -19,7 +19,7 @@ const Footer = () => {
                 Nurturing mental health resilience in adolescents for a stronger
                 future.
               </Para>
-              <div className="mt-4">
+              <div className="mt-4 mb-4">
                 <a className="me-3" href="http://facebook.com" target="_blank">
                   <FacebookIcon />
                 </a>
