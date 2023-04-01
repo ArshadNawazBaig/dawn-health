@@ -18,7 +18,9 @@ const Faq = ({
   };
 
   return (
-    <FaqWrapper className={className}>
+    <FaqWrapper
+      className={`${className} wow animate__animated animate__zoomIn`}
+    >
       <FaqHeader onClick={toggleAnswer}>
         <Question>{question}</Question>
         {isOpen ? (

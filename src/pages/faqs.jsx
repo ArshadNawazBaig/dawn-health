@@ -12,16 +12,23 @@ const FaqPage = () => {
     <FaqPageWrapper>
       <Hero>
         <Container>
-          <Row className="align-items-center h-100vh">
-            <Col md={6}>
+          <Row className="align-items-center h-100vh reverse">
+            <Col md={6} className="wow animate__animated animate__fadeInLeft">
               <Heading main="FAQ’s">about Our Wellness System</Heading>
               <Para>
                 Answers to common questions about our approach to wellness and
                 costs associated with it
               </Para>
             </Col>
-            <Col md={6} className="text-end">
-              <img src={Main} className="img-fluid" alt="main image" />
+            <Col
+              md={6}
+              className="text-end wow animate__animated animate__fadeInRight"
+            >
+              <img
+                src={Main}
+                className="img-fluid main-image"
+                alt="main image"
+              />
             </Col>
           </Row>
         </Container>
@@ -29,7 +36,7 @@ const FaqPage = () => {
       <SectionWrapper>
         <Container>
           <Row>
-            <Col md={5}>
+            <Col md={5} className="wow animate__animated animate__fadeInLeft">
               <SectionHeader className="pb-main" title="FAQ’s">
                 Expertly Crafted Answers to Your Mental Wellness Related
                 Questions

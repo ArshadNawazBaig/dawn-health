@@ -22,8 +22,8 @@ const SignupPage = () => {
     <SignupPageWrapper>
       <Hero>
         <Container>
-          <Row className="align-items-center h-100vh">
-            <Col md={6}>
+          <Row className="align-items-center h-100vh reverse">
+            <Col md={6} className="wow animate__animated animate__fadeInLeft">
               <Heading main="Sign up here to">
                 Become part of the Dawn Health population Health network
               </Heading>
@@ -32,27 +32,37 @@ const SignupPage = () => {
                 children and our communities.
               </Para>
             </Col>
-            <Col md={6} className="text-end">
-              <img src={Main} className="img-fluid" alt="main image" />
+            <Col
+              md={6}
+              className="text-end wow animate__animated animate__fadeInRight"
+            >
+              <img
+                src={Main}
+                className="img-fluid main-image"
+                alt="main image"
+              />
             </Col>
           </Row>
         </Container>
       </Hero>
       <SectionWrapper>
         <Container>
-          <Row className="pb-main">
-            <Col md={5} className="text-end">
+          <Row className="pb-main align-items-center">
+            <Col
+              md={5}
+              className="text-end wow animate__animated animate__fadeInLeft"
+            >
               <img src={Main2} className="img-fluid" alt="main image" />
             </Col>
             <Col md={1}></Col>
-            <Col md={6}>
+            <Col md={6} className="wow animate__animated animate__fadeInRight">
               <SectionHeader className="pb-main" title="Sign Up">
                 Don't let your children and family suffer in silence - reach out
                 to us for understanding, empowerment, and nurtured resilience.
               </SectionHeader>
               <form onSubmit={handleSubmit(onSubmit)}>
                 <Row>
-                  <Col md={6}>
+                  <Col md={6} className="mb-4">
                     <Input
                       title="Parent's First Name"
                       {...register('firstName', { required: true })}
@@ -61,7 +71,7 @@ const SignupPage = () => {
                       placeholder="Parent’s First Name"
                     />
                   </Col>
-                  <Col md={6}>
+                  <Col md={6} className="mb-4">
                     <Input
                       title="Parent's Last Name"
                       {...register('lastname', { required: true })}
@@ -71,8 +81,8 @@ const SignupPage = () => {
                     />
                   </Col>
                 </Row>
-                <Row className="mt-4">
-                  <Col md={6}>
+                <Row>
+                  <Col md={6} className="mb-4">
                     <Input
                       title="Cell phone number"
                       {...register('cell', { required: true })}
@@ -81,7 +91,7 @@ const SignupPage = () => {
                       placeholder="Phone Number"
                     />
                   </Col>
-                  <Col md={6}>
+                  <Col md={6} className="mb-4">
                     <Select
                       {...register('state', { required: true })}
                       errors={errors}
@@ -91,8 +101,8 @@ const SignupPage = () => {
                     />
                   </Col>
                 </Row>
-                <Row className="mt-4">
-                  <Col md={6}>
+                <Row>
+                  <Col md={6} className="mb-4">
                     <Input
                       title="Email Address"
                       {...register('email', { required: true })}
@@ -101,7 +111,7 @@ const SignupPage = () => {
                       placeholder="Email Address"
                     />
                   </Col>
-                  <Col md={6}>
+                  <Col md={6} className="mb-4">
                     <Input
                       title="Number of children"
                       {...register('children', { required: true })}
@@ -111,8 +121,8 @@ const SignupPage = () => {
                     />
                   </Col>
                 </Row>
-                <Row className="mt-4">
-                  <Col md={12}>
+                <Row>
+                  <Col md={12} className="mb-4">
                     <Input
                       title="Ages of children"
                       {...register('ages', { required: true })}

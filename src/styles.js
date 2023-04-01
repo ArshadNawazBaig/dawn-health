@@ -4,7 +4,10 @@ export const Body = styled.div`
   min-height: calc(64.7vh);
 `;
 
-export const HomePageWrapper = styled.div`
+export const HomePageWrapper = styled.div``;
+
+export const Hero = styled.div`
+  background: rgba(159, 189, 191, 0.4);
   & .reverse {
     @media (max-width: 992px) {
       flex-direction: column-reverse;
@@ -15,10 +18,6 @@ export const HomePageWrapper = styled.div`
       margin-top: 90px;
     }
   }
-`;
-
-export const Hero = styled.div`
-  background: rgba(159, 189, 191, 0.4);
 `;
 
 export const SectionWrapper = styled.div`

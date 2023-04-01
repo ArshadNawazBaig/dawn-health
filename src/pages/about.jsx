@@ -19,8 +19,8 @@ const AboutPage = () => {
     <AboutPageWrapper>
       <Hero>
         <Container>
-          <Row className="align-items-center h-100vh">
-            <Col md={5}>
+          <Row className="align-items-center h-100vh reverse">
+            <Col md={5} className="wow animate__animated animate__fadeInLeft">
               <Heading main="About Us">
                 Our Families are Behind Our Brand
               </Heading>
@@ -33,8 +33,15 @@ const AboutPage = () => {
               </Para>
             </Col>
             <Col md={1}></Col>
-            <Col md={6} className="text-end">
-              <img src={Main} className="img-fluid" alt="main image" />
+            <Col
+              md={6}
+              className="text-end wow animate__animated animate__fadeInRight"
+            >
+              <img
+                src={Main}
+                className="img-fluid main-image"
+                alt="main image"
+              />
             </Col>
           </Row>
         </Container>
@@ -42,10 +49,13 @@ const AboutPage = () => {
       <SectionWrapper>
         <Container>
           <Row className="align-items-center pb-main">
-            <Col md={6} className="text-start">
+            <Col
+              md={6}
+              className="text-start wow animate__animated animate__fadeInLeft"
+            >
               <img src={Main2} className="img-fluid" alt="main image" />
             </Col>
-            <Col md={6}>
+            <Col md={6} className="wow animate__animated animate__fadeInRight">
               <SubHeading>Our Story</SubHeading>
               <Para>
                 Founded in 2023 by classmates at Harvard Medical School, Dawn
@@ -63,7 +73,7 @@ const AboutPage = () => {
             </Col>
           </Row>
           <Row>
-            <Col md={5}>
+            <Col md={5} className="wow animate__animated animate__fadeInLeft">
               <SectionHeader className="pb-main" title="Our Proud Partners">
                 Collaborating to build a better future, our partners are the
                 cornerstone of our success. Together, we strive for excellence.
@@ -71,22 +81,46 @@ const AboutPage = () => {
             </Col>
           </Row>
           <Row className="pb-main">
-            <Col sm={6} md={4} className="mb-4">
+            <Col
+              sm={6}
+              md={4}
+              className="mb-4 wow animate__animated animate__zoomIn"
+            >
               <img src={Partner1} className="img-fluid" alt="main image" />
             </Col>
-            <Col sm={6} md={4} className="mb-4">
+            <Col
+              sm={6}
+              md={4}
+              className="mb-4 wow animate__animated animate__zoomIn"
+            >
               <img src={Partner2} className="img-fluid" alt="main image" />
             </Col>
-            <Col sm={6} md={4} className="mb-4">
+            <Col
+              sm={6}
+              md={4}
+              className="mb-4 wow animate__animated animate__zoomIn"
+            >
               <img src={Partner3} className="img-fluid" alt="main image" />
             </Col>
-            <Col sm={6} md={4} className="mb-4">
+            <Col
+              sm={6}
+              md={4}
+              className="mb-4 wow animate__animated animate__zoomIn"
+            >
               <img src={Partner4} className="img-fluid" alt="main image" />
             </Col>
-            <Col sm={6} md={4} className="mb-4">
+            <Col
+              sm={6}
+              md={4}
+              className="mb-4 wow animate__animated animate__zoomIn"
+            >
               <img src={Partner5} className="img-fluid" alt="main image" />
             </Col>
-            <Col sm={6} md={4} className="mb-4">
+            <Col
+              sm={6}
+              md={4}
+              className="mb-4 wow animate__animated animate__zoomIn"
+            >
               <img src={Partner6} className="img-fluid" alt="main image" />
             </Col>
           </Row>

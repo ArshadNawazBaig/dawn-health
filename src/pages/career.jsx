@@ -14,14 +14,15 @@ import Main from './../assets/career/1.png';
 import Main2 from './../assets/career/2.png';
 import Main3 from './../assets/career/3.png';
 import Main4 from './../assets/career/4.png';
+import Button from '../components/Button';
 
 const CareerPage = () => {
   return (
     <CareerPageWrapper>
       <Hero>
         <Container>
-          <Row className="align-items-center h-100vh">
-            <Col md={5}>
+          <Row className="align-items-center h-100vh reverse">
+            <Col md={5} className="wow animate__animated animate__fadeInLeft">
               <Heading main="Unlock Your Potential ">
                 Join Our Team and Make your mark!
               </Heading>
@@ -34,8 +35,15 @@ const CareerPage = () => {
               </Para>
             </Col>
             <Col md={1}></Col>
-            <Col md={6} className="text-end">
-              <img src={Main} className="img-fluid" alt="main image" />
+            <Col
+              md={6}
+              className="text-end wow animate__animated animate__fadeInRight"
+            >
+              <img
+                src={Main}
+                className="img-fluid main-image"
+                alt="main image"
+              />
             </Col>
           </Row>
         </Container>
@@ -45,7 +53,7 @@ const CareerPage = () => {
           <Row>
             <Col md={12} className="text-center">
               <SectionHeader
-                className="pb-main"
+                className="pb-main wow animate__animated animate__zoomIn"
                 title="Child & Adolescent Behavioral Therapist"
               >
                 Licensed in any of the following states: TX, IL, VA, or MA
@@ -53,7 +61,7 @@ const CareerPage = () => {
             </Col>
           </Row>
           <Row className="pb-main align-items-center">
-            <Col md={6}>
+            <Col md={6} className="wow animate__animated animate__fadeInLeft">
               <SectionHeader className="" title="About The Role">
                 Our clinical team members collaborate with other phenomenal
                 behavioral health therapists and coaches, as well as our Chief
@@ -104,15 +112,21 @@ const CareerPage = () => {
                 </ListItem>
               </List>
             </Col>
-            <Col md={6} className="text-end">
+            <Col
+              md={6}
+              className="text-end wow animate__animated animate__fadeInRight"
+            >
               <img src={Main2} className="img-fluid" alt="main image" />
             </Col>
           </Row>
           <Row className="pb-main align-items-center">
-            <Col md={6} className="text-start">
+            <Col
+              md={6}
+              className="text-start wow animate__animated animate__fadeInLeft"
+            >
               <img src={Main3} className="img-fluid" alt="main image" />
             </Col>
-            <Col md={6}>
+            <Col md={6} className="wow animate__animated animate__fadeInRight">
               <SectionHeader className="" title="About You">
                 You will thrive in the role of Behavioral Therapist at
                 Brightline if you have:
@@ -153,7 +167,7 @@ const CareerPage = () => {
             </Col>
           </Row>
           <Row className="pb-main align-items-center">
-            <Col md={6}>
+            <Col md={6} className="wow animate__animated animate__fadeInLeft">
               <SectionHeader className="" title="Benefits + Perks">
                 Here at Dawn Health, we believe that benefits should meet you
                 where you're at. Our benefits package includes the following:
@@ -208,8 +222,22 @@ const CareerPage = () => {
                 </ListItem>
               </List>
             </Col>
-            <Col md={6} className="text-end">
+            <Col
+              md={6}
+              className="text-end wow animate__animated animate__fadeInRight"
+            >
               <img src={Main4} className="img-fluid" alt="main image" />
+            </Col>
+            <Col className="text-center">
+              <Button className="wow animate__animated animate__zoomIn my-5">
+                <a
+                  href="https://calendly.com/dawnhealth_talentaquisition/30min?month=2023-03"
+                  target="_blank"
+                  className="no-deco"
+                >
+                  Apply Here
+                </a>
+              </Button>
             </Col>
           </Row>
         </Container>

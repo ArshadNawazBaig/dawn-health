@@ -11,11 +11,16 @@ import HomePage from './pages/home';
 import SignupPage from './pages/signup';
 import TeamPage from './pages/team';
 import { Body } from './styles';
-
+import WOW from 'wow.js';
+import 'animate.css';
 function App() {
   const params = useLocation();
   const { height, width } = useScroll();
   const [active, setActive] = useState(params.pathname);
+
+  useEffect(() => {
+    new WOW().init();
+  }, []);
   useEffect(() => {
     setActive(params.pathname);
   }, [params]);

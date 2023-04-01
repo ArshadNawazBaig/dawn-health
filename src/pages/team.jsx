@@ -13,8 +13,8 @@ const TeamPage = () => {
     <TeamPageWrapper>
       <Hero>
         <Container>
-          <Row className="align-items-center h-100vh">
-            <Col md={6}>
+          <Row className="align-items-center h-100vh reverse">
+            <Col md={6} className="wow animate__animated animate__fadeInLeft">
               <Heading main="dedicated Team">
                 Empowering Mental Wellness for all Children
               </Heading>
@@ -24,8 +24,15 @@ const TeamPage = () => {
                 children.
               </Para>
             </Col>
-            <Col md={6} className="text-end">
-              <img src={Main} className="img-fluid" alt="main image" />
+            <Col
+              md={6}
+              className="text-end wow animate__animated animate__fadeInRight"
+            >
+              <img
+                src={Main}
+                className="img-fluid main-image"
+                alt="main image"
+              />
             </Col>
           </Row>
         </Container>
@@ -33,7 +40,7 @@ const TeamPage = () => {
       <SectionWrapper>
         <Container>
           <Row>
-            <Col md={5}>
+            <Col md={5} className="wow animate__animated animate__fadeInLeft">
               <SectionHeader className="pb-main" title="Our Leadership Team">
                 Let us guide you towards healing and resilience, one step at a
                 time. With our team, you are never alone on your journey.
@@ -44,6 +51,7 @@ const TeamPage = () => {
             {teamMembers.map((member) => (
               <Col sm={6} md={4} lg={3} className="mb-4" key={member.id}>
                 <TeamCard
+                  className="wow animate__animated animate__zoomIn"
                   name={member.name}
                   status={member.status}
                   alt={member.alt}
