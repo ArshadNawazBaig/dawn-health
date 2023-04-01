@@ -7,7 +7,15 @@ import Para from '../components/Para';
 import { SectionHeader } from '../components/SectionHeader';
 import TestimonialCard from '../components/TestimonialCard';
 import ValueCard from '../components/ValuesCard';
-import { Hero, HomePageWrapper, SectionWrapper } from '../styles';
+import {
+  Card,
+  Hero,
+  HomePageWrapper,
+  InnerCard,
+  SectionWrapper,
+  WellnessInner,
+  WellnessWrapper,
+} from '../styles';
 import Main from './../assets/home/1.png';
 import Main2 from './../assets/home/2.png';
 import Main3 from './../assets/home/3.png';
@@ -67,6 +75,34 @@ const HomePage = () => {
                 level and build mental health resilience through therapy and
                 metabolic health.
               </SectionHeader>
+            </Col>
+          </Row>
+          {/* <Row>
+            <Col md={12}>
+              <WellnessWrapper>
+                <WellnessInner className="d-flex justify-content-between">
+                  <Card>1</Card>
+                  <InnerCard className="d-flex justify-content-between">
+                    <Card>2</Card>
+                    <Card>3</Card>
+                  </InnerCard>
+                  <Card>4</Card>
+                </WellnessInner>
+              </WellnessWrapper>
+            </Col>
+          </Row> */}
+          <Row>
+            <Col md={12} className="wellness-wrapper">
+              <Row className="wellness-inner">
+                <Col md={3}>1</Col>
+                <Col md={6}>
+                  <Row className="inner-card">
+                    <Col>2</Col>
+                    <Col>3</Col>
+                  </Row>
+                </Col>
+                <Col md={3}>4</Col>
+              </Row>
             </Col>
           </Row>
         </Container>
