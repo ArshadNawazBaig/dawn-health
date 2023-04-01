@@ -4,9 +4,11 @@ import Button from '../Button';
 import { NavbarWrapper, NavItem, RecLink } from './styles';
 import Logo from './../../assets/logo/logo.png';
 import { Navbar } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 
 export const Header = (props) => {
   const { active, className } = props;
+  const navigate = useNavigate();
   const navLinks = [
     { id: 1, to: '/', title: 'Home' },
     { id: 2, to: '/about', title: 'About' },
@@ -37,7 +39,7 @@ export const Header = (props) => {
               ))}
             </NavItem>
             <NavItem>
-              <Button>Signup</Button>
+              <Button onClick={() => navigate('/signup')}>Signup</Button>
             </NavItem>
           </Navbar.Collapse>
         </Container>

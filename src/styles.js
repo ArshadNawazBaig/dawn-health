@@ -25,3 +25,5 @@ export const CareerPageWrapper = styled.div``;
 export const List = styled.ul``;
 
 export const ListItem = styled.li``;
+
+export const SignupPageWrapper = styled.div``;

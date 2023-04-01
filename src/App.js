@@ -8,6 +8,7 @@ import CareerPage from './pages/career';
 import Components from './pages/components';
 import FaqPage from './pages/faqs';
 import HomePage from './pages/home';
+import SignupPage from './pages/signup';
 import TeamPage from './pages/team';
 import { Body } from './styles';
 
@@ -33,6 +34,7 @@ function App() {
           <Route exact path="/about" element={<AboutPage />}></Route>
           <Route exact path="/faqs" element={<FaqPage />}></Route>
           <Route exact path="/career" element={<CareerPage />}></Route>
+          <Route exact path="/signup" element={<SignupPage />}></Route>
           <Route exact path="/components" element={<Components />}></Route>
         </Routes>
       </Body>
