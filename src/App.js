@@ -13,10 +13,12 @@ import TeamPage from './pages/team';
 import { Body } from './styles';
 import WOW from 'wow.js';
 import 'animate.css';
+import useScrollToTop from './hooks/useScrollToTop';
 function App() {
   const params = useLocation();
   const { height, width } = useScroll();
   const [active, setActive] = useState(params.pathname);
+  useScrollToTop();
 
   useEffect(() => {
     new WOW().init();
