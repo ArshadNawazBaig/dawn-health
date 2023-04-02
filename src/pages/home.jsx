@@ -15,8 +15,12 @@ import Main4 from './../assets/home/4.png';
 import Main5 from './../assets/home/5.png';
 import Main6 from './../assets/home/6.png';
 import Main7 from './../assets/home/7.png';
+import Main8 from './../assets/home/8.png';
+import Animated from './../assets/home/animated-1.gif';
+import { useNavigate } from 'react-router-dom';
 
 const HomePage = () => {
+  const navigate = useNavigate();
   return (
     <HomePageWrapper>
       <Hero>
@@ -32,15 +36,22 @@ const HomePage = () => {
                 create stronger relationships with their children, help keep
                 them engaged in school, and see them thrive.
               </Para>
-              <Button className="mt-3 mb-3">Explore More</Button>
+              <Button className="mt-3 mb-3" onClick={() => navigate('/signup')}>
+                Explore More
+              </Button>
             </Col>
             <Col
               md={6}
-              className="text-end wow animate__animated animate__fadeInRight"
+              className="text-end wow animate__animated animate__fadeInRight wrapper"
             >
               <img
-                src={Main}
-                className="img-fluid main-image"
+                src={Main8}
+                className="img-fluid main-image wrapper-image"
+                alt="main image"
+              />
+              <img
+                src={Animated}
+                className="img-fluid main-image inner-image"
                 alt="main image"
               />
             </Col>

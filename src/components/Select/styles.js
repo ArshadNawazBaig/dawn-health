@@ -18,4 +18,9 @@ export const SelectWrapper = styled.select`
   }
 `;
 
-export const OptionWrapper = styled.option``;
+export const OptionWrapper = styled.option`
+  padding: 20px 0;
+  &:hover {
+    background-color: red;
+  }
+`;

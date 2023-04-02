@@ -9,7 +9,7 @@ import { Hero, SectionWrapper, SignupPageWrapper } from '../styles';
 import Main from './../assets/signup/1.png';
 import Main2 from './../assets/signup/2.png';
 import { useForm } from 'react-hook-form';
-import Select from '../components/Select';
+import Form from '../components/Form';
 
 const SignupPage = () => {
   const {
@@ -60,7 +60,7 @@ const SignupPage = () => {
                 Don't let your children and family suffer in silence - reach out
                 to us for understanding, empowerment, and nurtured resilience.
               </SectionHeader>
-              <form onSubmit={handleSubmit(onSubmit)}>
+              {/* <form onSubmit={handleSubmit(onSubmit)}>
                 <Row>
                   <Col md={6} className="mb-4">
                     <Input
@@ -135,7 +135,8 @@ const SignupPage = () => {
                     </Button>
                   </Col>
                 </Row>
-              </form>
+              </form> */}
+              <Form />
             </Col>
           </Row>
         </Container>

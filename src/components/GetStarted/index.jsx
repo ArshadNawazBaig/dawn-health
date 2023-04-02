@@ -5,8 +5,10 @@ import Para from '../Para';
 import { GetStartedInner, GetStartedWrapper } from './styles';
 import Logo from './../../assets/logo/started-logo.png';
 import Button from '../Button';
+import { useNavigate } from 'react-router-dom';
 
 const GetStarted = () => {
+  const navigate = useNavigate();
   return (
     <GetStartedWrapper>
       <GetStartedInner>
@@ -24,7 +26,9 @@ const GetStarted = () => {
                 network that harnesses opportunities to foster healthier
                 communities.
               </Para>
-              <Button className="mt-3">Get Started</Button>
+              <Button className="mt-3" onClick={() => navigate('/signup')}>
+                Get Started
+              </Button>
             </Col>
           </Row>
         </Container>

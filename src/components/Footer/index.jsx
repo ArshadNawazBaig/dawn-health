@@ -34,7 +34,7 @@ const Footer = () => {
             <Col sm={2} className="wow animate__animated animate__fadeInRight">
               <Title>Company</Title>
               <ReLink to="/about">Partners</ReLink>
-              <ReLink to="/career">Careers</ReLink>
+              <ReLink to="/join-our-team">Join our team</ReLink>
               <ReLink to="/signup">Contact us</ReLink>
             </Col>
             <Col sm={2} className="wow animate__animated animate__fadeInRight">
@@ -45,8 +45,8 @@ const Footer = () => {
             <Col sm={2} className="wow animate__animated animate__fadeInRight">
               <Title>Support</Title>
               <ReLink to="/faqs">FAQs</ReLink>
-              <ReLink to="/">Terms & Conditions</ReLink>
-              <ReLink to="/">Privacy Policy</ReLink>
+              <ReLink to="/terms-and-conditions">Terms & Conditions</ReLink>
+              {/* <ReLink to="/">Privacy Policy</ReLink> */}
             </Col>
           </Row>
         </Container>
@@ -54,7 +54,7 @@ const Footer = () => {
       <CopyRight>
         <Container>
           <Row>
-            <Col className="wow animate__animated animate__zoomIn">
+            <Col className="">
               <Text>
                 All Copyright © 2023 - Dawn Health . All Right Reversed{' '}
               </Text>

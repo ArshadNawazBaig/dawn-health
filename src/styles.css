@@ -35,6 +35,30 @@ body {
   /* padding: 50px 30px; */
 }
 
+.no-deco {
+  text-decoration: none;
+  color: #fff;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.wrapper-image {
+  z-index: 1;
+}
+
+.inner-image {
+  position: absolute;
+  width: 87%;
+  height: 91%;
+  border-radius: 247px 247px 100px 100px;
+}
+
 @media (max-width: 992px) {
   .inner-card {
     margin-top: 0px;
@@ -43,9 +67,42 @@ body {
   .last-card {
     margin-top: 40px;
   }
+  .inner-image {
+    width: 85%;
+    height: 72%;
+  }
 }
 
-.no-deco {
-  text-decoration: none;
-  color: #fff;
+@media (min-width: 1400px) {
+  .inner-image {
+    width: 77%;
+    height: 91%;
+  }
+}
+
+.terms {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type='radio'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* create custom radiobutton appearance */
+  width: 20px;
+  height: 20px;
+  padding: 3px;
+  /* background-color only for content */
+  background-clip: content-box;
+  border: 2px solid #bbbbbb;
+  background-color: #e7e6e7;
+  border-radius: 50%;
+}
+
+/* appearance for checked radiobutton */
+input[type='radio']:checked {
+  background-color: #e8971e;
 }

@@ -17,4 +17,7 @@ export const InputWrapper = styled.input`
 
 export const Error = styled.p`
   color: #c73e1d;
+  margin-bottom: 0;
+  font-size: 12px;
+  margin-top: 5px;
 `;

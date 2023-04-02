@@ -14,6 +14,7 @@ import { Body } from './styles';
 import WOW from 'wow.js';
 import 'animate.css';
 import useScrollToTop from './hooks/useScrollToTop';
+import TermsAndConitionsPage from './pages/terms-and-conditions';
 function App() {
   const params = useLocation();
   const { height, width } = useScroll();
@@ -39,8 +40,13 @@ function App() {
           <Route exact path="/team" element={<TeamPage />}></Route>
           <Route exact path="/about" element={<AboutPage />}></Route>
           <Route exact path="/faqs" element={<FaqPage />}></Route>
-          <Route exact path="/career" element={<CareerPage />}></Route>
+          <Route exact path="/join-our-team" element={<CareerPage />}></Route>
           <Route exact path="/signup" element={<SignupPage />}></Route>
+          <Route
+            exact
+            path="/terms-and-conditions"
+            element={<TermsAndConitionsPage />}
+          ></Route>
           <Route exact path="/components" element={<Components />}></Route>
         </Routes>
       </Body>
