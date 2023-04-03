@@ -21,7 +21,7 @@ const CareerPage = () => {
     <CareerPageWrapper>
       <Hero>
         <Container>
-          <Row className="align-items-center reverse">
+          <Row className="align-items-center h-100vh reverse">
             <Col md={5} className="wow animate__animated animate__fadeInLeft">
               <Heading main="Unlock Your Potential ">
                 Join Our Team and Make your mark!

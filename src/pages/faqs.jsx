@@ -12,7 +12,7 @@ const FaqPage = () => {
     <FaqPageWrapper>
       <Hero>
         <Container>
-          <Row className="align-items-center reverse">
+          <Row className="align-items-center h-100vh reverse">
             <Col md={6} className="wow animate__animated animate__fadeInLeft">
               <Heading main="FAQ’s">about Our Wellness System</Heading>
               <Para>
@@ -20,10 +20,7 @@ const FaqPage = () => {
                 costs associated with it
               </Para>
             </Col>
-            <Col
-              md={6}
-              className="text-end wow animate__animated animate__fadeInRight"
-            >
+            <Col md={6} className=" wow animate__animated animate__fadeInRight">
               <img
                 src={Main}
                 className="img-fluid main-image"
