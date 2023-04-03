@@ -58,13 +58,18 @@ const HomePage = () => {
       <SectionWrapper>
         <Container>
           <Row>
-            <Col md={12}>
+            <Col md={8}>
               <SectionHeader
                 className="wow animate__animated animate__fadeInLeft pb-main"
                 title="Mental Health Resilience For Adolescents"
               >
-                Families connect with us
+                Families connect with us - Change this to: Revolutionize your
+                child's mental health journey with our AI-powered approach,
+                designed to keep parents engaged and informed every step of the
+                way.
               </SectionHeader>
+            </Col>
+            <Col md={12}>
               <div className="wow animate__animated animate__zoomIn">
                 <iframe
                   width="100%"
@@ -87,9 +92,9 @@ const HomePage = () => {
                 className="pb-main wow animate__animated animate__fadeInLeft"
                 title="Our Wellness Programs"
               >
-                Our care pathways focus on address symptoms at a pre-crisis
-                level and build mental health resilience through therapy and
-                metabolic health.
+                Take charge of your mental health with our proactive care
+                pathways that address symptoms before they escalate, and build
+                resilience through therapy and metabolic health.
               </SectionHeader>
             </Col>
           </Row>
