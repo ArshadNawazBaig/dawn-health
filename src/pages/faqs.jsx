@@ -12,7 +12,7 @@ const FaqPage = () => {
     <FaqPageWrapper>
       <Hero>
         <Container>
-          <Row className="align-items-center h-100vh reverse">
+          <Row className="align-items-center reverse">
             <Col md={6} className="wow animate__animated animate__fadeInLeft">
               <Heading main="FAQ’s">about Our Wellness System</Heading>
               <Para>

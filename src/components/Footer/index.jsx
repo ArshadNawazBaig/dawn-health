@@ -41,12 +41,14 @@ const Footer = () => {
               {/* <Para className="cursor-pointer text-white" onClick={handleShow}>
                 Contact us
               </Para> */}
-              <a
-                className="cursor-pointer text-white"
-                href="mailto:panos@dawnhealth.care"
-              >
-                Contact us
-              </a>
+              <div className="mb-2">
+                <a
+                  className="cursor-pointer text-white"
+                  href="mailto:panos@dawnhealth.care"
+                >
+                  Contact us
+                </a>
+              </div>
             </Col>
             <Col sm={2} className="wow animate__animated animate__fadeInRight">
               <Title>Resources</Title>

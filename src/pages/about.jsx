@@ -19,7 +19,7 @@ const AboutPage = () => {
     <AboutPageWrapper>
       <Hero>
         <Container>
-          <Row className="align-items-center h-100vh reverse">
+          <Row className="align-items-center reverse">
             <Col md={5} className="wow animate__animated animate__fadeInLeft">
               <Heading main="About Us">
                 Our Families are Behind Our Brand

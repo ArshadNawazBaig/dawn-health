@@ -22,7 +22,7 @@ const SignupPage = () => {
     <SignupPageWrapper>
       <Hero>
         <Container>
-          <Row className="align-items-center h-100vh reverse">
+          <Row className="align-items-center reverse">
             <Col md={6} className="wow animate__animated animate__fadeInLeft">
               <Heading main="Sign up here to">
                 Become part of the Dawn Health population Health network
