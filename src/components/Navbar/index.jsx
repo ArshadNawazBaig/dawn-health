@@ -26,8 +26,11 @@ export const Header = (props) => {
             </RecLink>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav me-auto">
-            <NavItem className="mx-auto">
+          <Navbar.Collapse
+            id="responsive-navbar-nav"
+            className="justify-content-end"
+          >
+            <NavItem>
               {navLinks.map((navLink) => (
                 <RecLink
                   key={navLink.id}
@@ -38,9 +41,9 @@ export const Header = (props) => {
                 </RecLink>
               ))}
             </NavItem>
-            <NavItem>
+            {/* <NavItem>
               <Button onClick={() => navigate('/signup')}>Signup</Button>
-            </NavItem>
+            </NavItem> */}
           </Navbar.Collapse>
         </Container>
       </Navbar>

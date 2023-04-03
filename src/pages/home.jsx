@@ -15,8 +15,6 @@ import Main4 from './../assets/home/4.png';
 import Main5 from './../assets/home/5.png';
 import Main6 from './../assets/home/6.png';
 import Main7 from './../assets/home/7.png';
-import Main8 from './../assets/home/8.png';
-import Animated from './../assets/home/animated-1.gif';
 import { useNavigate } from 'react-router-dom';
 
 const HomePage = () => {
@@ -31,10 +29,14 @@ const HomePage = () => {
                 Nurturing Mental Health resilience
               </Heading>
               <Para>
-                Dawn Health provides parents, guardians, and secondary education
-                institutions with the tools to nurture mental health resilience,
-                create stronger relationships with their children, help keep
-                them engaged in school, and see them thrive.
+                At Dawn Health, we're transforming adolescent mental healthcare
+                with a groundbreaking approach that prioritizes preventive
+                wellness. By identifying and addressing pre-crisis conditions,
+                we can help teens and their parents proactively manage their
+                mental health. Our innovative approach is designed to detect and
+                respond to increased depression and anxiety acuity levels,
+                ensuring that families receive the support they need before a
+                crisis occurs.
               </Para>
               <Button className="mt-3 mb-3" onClick={() => navigate('/signup')}>
                 Explore More
@@ -42,16 +44,11 @@ const HomePage = () => {
             </Col>
             <Col
               md={6}
-              className="text-end wow animate__animated animate__fadeInRight wrapper"
+              className="text-end wow animate__animated animate__fadeInRight"
             >
               <img
-                src={Main8}
-                className="img-fluid main-image wrapper-image"
-                alt="main image"
-              />
-              <img
-                src={Animated}
-                className="img-fluid main-image inner-image"
+                src={Main}
+                className="img-fluid main-image"
                 alt="main image"
               />
             </Col>
@@ -64,7 +61,7 @@ const HomePage = () => {
             <Col md={12}>
               <SectionHeader
                 className="wow animate__animated animate__fadeInLeft pb-main"
-                title="Experience our story in motion "
+                title="Mental Health Resilience For Adolescents"
               >
                 Families connect with us
               </SectionHeader>
@@ -119,10 +116,16 @@ const HomePage = () => {
                 <Col lg={3}>
                   <Card>
                     <img src={Main4} className="img-fluid mb-3" alt="main" />
-                    <Title>Biweekly PHQAssessment </Title>
+                    <Title>
+                      Biweekly Evidence-Based Assessment for Depression &
+                      Anxiety
+                    </Title>
                     <Para>
-                      Text-based diagnosis tool to measure the severity of
-                      depression and anxiety
+                      Text-based diagnosis tool, validated by the American
+                      Psychiatric Association (APA) and the U.S. Preventive
+                      Services Task Force (USPSTF), that also engages
+                      parents/guardians to measure the symptoms' acuity level in
+                      adolescents
                     </Para>
                   </Card>
                 </Col>
