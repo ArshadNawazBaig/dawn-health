@@ -147,7 +147,15 @@ const HomePage = () => {
                           Continuous Data Assessment
                         </Title>
                         <Para className="text-white">
-                          Tracking & monitoring depression and anxiety symptoms
+                          Tracking and monitoring depression and anxiety
+                          symptoms in your children can lead to better diagnosis
+                          and treatment outcomes. Research studies have shown
+                          that using mobile apps to monitor symptoms of
+                          depression and anxiety can significantly improve
+                          mental health outcomes, according to a study published
+                          in the Journal of Medical Internet Research. By
+                          staying aware of your child's mental health, you can
+                          help them get the support they need to thrive.
                         </Para>
                       </Card>
                     </Col>
@@ -162,8 +170,14 @@ const HomePage = () => {
                           Virtual & Prompt Care
                         </Title>
                         <Para className="text-white">
-                          System prompt pre-crisis intervention & mental health
-                          resilience therapy
+                          Virtual and prompt care for mental health offers a
+                          convenient, accessible, and confidential way for
+                          parents of adolescents to provide their children with
+                          the necessary support and resources to manage their
+                          mental health challenges. By accessing virtual care,
+                          parents can promote overall wellness and ensure that
+                          their children receive the care they need before they
+                          realize they need it.
                         </Para>
                       </Card>
                     </Col>
@@ -174,7 +188,9 @@ const HomePage = () => {
                     <img src={Main7} className="img-fluid mb-3" alt="main" />
                     <Title>Partnering with Parents/Guardians</Title>
                     <Para>
-                      Parent development through Coping Skills & Peer Community
+                      Partnering together to promote student engagement, reduce
+                      absenteeism, and build mental health resilience, ensuring
+                      children receive the support they need to succeed.
                     </Para>
                   </Card>
                 </Col>
