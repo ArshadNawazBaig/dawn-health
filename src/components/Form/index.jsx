@@ -4,6 +4,7 @@ import { Error, InputWrapper } from '../Input/styles';
 import { Col, Row } from 'react-bootstrap';
 import { OptionWrapper, SelectWrapper } from '../Select/styles';
 import Button from '../Button';
+import Input from '../Input';
 
 const options = [
   { value: 'IL', label: 'IL' },
@@ -45,33 +46,35 @@ function Form() {
     <form onSubmit={handleSubmit(onSubmit)}>
       <Row>
         <Col md={6} className="mb-4">
-          <InputWrapper
-            {...register('parentFirstName', { required: true })}
+          <Input
+            register={register}
+            name="parentFirstName"
             placeholder="Parent's First Name"
+            validation={{ required: true }}
+            errors={errors}
           />
-          {errors.parentFirstName && <Error>This field is required</Error>}
         </Col>
         <Col md={6} className="mb-4">
-          <InputWrapper
-            {...register('parentLastName', { required: true })}
+          <Input
+            register={register}
+            name="parentLastName"
             placeholder="Parent's Last Name"
+            validation={{ required: true }}
+            errors={errors}
           />
-          {errors.parentLastName && <Error>This field is required</Error>}
         </Col>
       </Row>
       <Row>
         <Col md={6} className="mb-4">
-          <InputWrapper
-            {...register('phoneNumber', { required: true })}
-            placeholder="Cell phone number"
+          <Input
+            register={register}
+            name="phoneNumber"
+            placeholder="Phone Number"
+            validation={{ required: true }}
+            errors={errors}
           />
-          {errors.phoneNumber && <Error>This field is required</Error>}
         </Col>
         <Col md={6} className="mb-4">
-          {/* <InputWrapper
-            {...register('state', { required: true })}
-            placeholder="State"
-          /> */}
           <SelectWrapper
             {...register('state', { required: true })}
             placeholder="State"
@@ -90,11 +93,13 @@ function Form() {
       </Row>
       <Row>
         <Col md={6} className="mb-4">
-          <InputWrapper
-            {...register('email', { required: true })}
+          <Input
+            register={register}
+            name="email"
             placeholder="Email Address"
+            validation={{ required: true }}
+            errors={errors}
           />
-          {errors.email && <Error>This field is required</Error>}
         </Col>
         <Col md={6} className="mb-4">
           <SelectWrapper
@@ -117,14 +122,14 @@ function Form() {
       <Row>
         {numChildren?.map((child) => (
           <Col md={6} className="mb-4" key={child}>
-            <InputWrapper
-              {...register(`child${child}Age`, { required: true })}
+            <Input
+              register={register}
+              name={`child${child}Age`}
               placeholder={`Child ${child} Age`}
+              validation={{ required: true }}
+              errors={errors}
               type="number"
             />
-            {errors[`child${child}Age`] && (
-              <Error>This field is required</Error>
-            )}
           </Col>
         ))}
       </Row>

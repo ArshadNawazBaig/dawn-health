@@ -11,16 +11,24 @@ const Input = (props) => {
     placeholder,
     title,
     name,
+    register,
+    validation,
     ...rest
   } = props;
   return (
     <>
-      <InputWrapper onChange={onChange} placeholder={placeholder} {...rest} />
-      {/* {errors[name]?.type === 'required' && (
+      <InputWrapper
+        onChange={onChange}
+        placeholder={placeholder}
+        type={type}
+        {...register(name, validation)}
+        {...rest}
+      />
+      {errors[name]?.type === 'required' && (
         <Error role="alert" className="mb-0">
           {errors[name] && <span>This field is required</span>}
         </Error>
-      )} */}
+      )}
     </>
   );
 };

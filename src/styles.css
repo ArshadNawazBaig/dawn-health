@@ -106,3 +106,13 @@ input[type='radio'] {
 input[type='radio']:checked {
   background-color: #e8971e;
 }
+
+.cursor-pointer {
+  cursor: pointer;
+  text-decoration: none;
+  transition: ease-in-out all 0.5s;
+}
+
+.cursor-pointer:hover {
+  color: #e8971e !important;
+}

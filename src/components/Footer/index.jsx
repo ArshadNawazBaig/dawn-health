@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { FacebookIcon, TwitterIcon, YoutubeIcon } from '../Icons';
 import Para from '../Para';
 import Logo from './../../assets/logo/dark-logo.png';
 import { CopyRight, FooterWrapper, ReLink, Title, Text } from './styles';
+import { MyModal } from '../Modal';
 
 const Footer = () => {
+  const [show, setShow] = useState(false);
+  const handleShow = () => setShow(true);
   return (
     <>
       <FooterWrapper>
@@ -35,7 +38,15 @@ const Footer = () => {
               <Title>Company</Title>
               <ReLink to="/about">Partners</ReLink>
               <ReLink to="/join-our-team">Join our team</ReLink>
-              <ReLink to="/signup">Contact us</ReLink>
+              {/* <Para className="cursor-pointer text-white" onClick={handleShow}>
+                Contact us
+              </Para> */}
+              <a
+                className="cursor-pointer text-white"
+                href="mailto:panos@dawnhealth.care"
+              >
+                Contact us
+              </a>
             </Col>
             <Col sm={2} className="wow animate__animated animate__fadeInRight">
               <Title>Resources</Title>
@@ -62,6 +73,7 @@ const Footer = () => {
           </Row>
         </Container>
       </CopyRight>
+      {/* <MyModal show={show} setShow={setShow} handleShow={handleShow} /> */}
     </>
   );
 };
