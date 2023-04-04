@@ -17,7 +17,6 @@ const options = [
 ];
 
 const childrenOptions = [
-  { value: '0', label: 'None' },
   { value: '1', label: '1' },
   { value: '2', label: '2' },
   { value: '3', label: '3' },
@@ -26,24 +25,24 @@ const childrenOptions = [
 ];
 
 const insurences = [
-  { value: 'blue cross blue shield', label: 'Blue Cross Blue Shield' },
   { value: 'aetna', label: 'Aetna' },
+  { value: 'anthem healthKeepers', label: 'Anthem HealthKeepers' },
+  { value: 'blue cross blue shield', label: 'Blue Cross Blue Shield' },
   { value: 'cigna', label: 'Cigna' },
-  { value: 'unitedHealthcare', label: 'UnitedHealthcare' },
-  { value: 'humana', label: 'Humana' },
+  { value: 'fallon health', label: 'Fallon Health' },
   {
     value: 'harvard pilgrim health care',
     label: 'Harvard Pilgrim Health Care',
   },
-  { value: 'tufts health plan', label: 'Tufts Health Plan' },
-  { value: 'fallon health', label: 'Fallon Health' },
-  { value: 'neighborhood health plan', label: 'Neighborhood Health Plan' },
-  { value: 'medica', label: 'Medica' },
   { value: 'healthPartners', label: 'HealthPartners' },
-  { value: 'uCare', label: 'UCare' },
-  { value: 'preferredOne', label: 'PreferredOne' },
-  { value: 'anthem healthKeepers', label: 'Anthem HealthKeepers' },
+  { value: 'humana', label: 'Humana' },
+  { value: 'medica', label: 'Medica' },
+  { value: 'neighborhood health plan', label: 'Neighborhood Health Plan' },
   { value: 'optima health', label: 'Optima Health' },
+  { value: 'preferredOne', label: 'PreferredOne' },
+  { value: 'tufts health plan', label: 'Tufts Health Plan' },
+  { value: 'uCare', label: 'UCare' },
+  { value: 'unitedHealthcare', label: 'UnitedHealthcare' },
   { value: 'other', label: 'Other' },
 ];
 
@@ -119,6 +118,7 @@ function Form() {
       )}
       <Row>
         <Col md={6} className="mb-4">
+          <label>Parent's First Name</label>
           <Input
             register={register}
             name="parentFirstName"
@@ -128,6 +128,7 @@ function Form() {
           />
         </Col>
         <Col md={6} className="mb-4">
+          <label>Parent's Last Name</label>
           <Input
             register={register}
             name="parentLastName"
@@ -139,6 +140,7 @@ function Form() {
       </Row>
       <Row>
         <Col md={6} className="mb-4">
+          <label>Phone Number</label>
           <Input
             register={register}
             name="phoneNumber"
@@ -148,6 +150,7 @@ function Form() {
           />
         </Col>
         <Col md={6} className="mb-4">
+          <label>State</label>
           <SelectWrapper
             {...register('state', { required: true })}
             placeholder="State"
@@ -169,6 +172,7 @@ function Form() {
       </Row>
       <Row>
         <Col md={6} className="mb-4">
+          <label>Email Address</label>
           <Input
             register={register}
             name="email"
@@ -178,6 +182,7 @@ function Form() {
           />
         </Col>
         <Col md={6} className="mb-4">
+          <label>Number of Childern</label>
           <SelectWrapper
             {...register('numOfChildern', { required: true })}
             placeholder="numOfChildern"
@@ -202,6 +207,7 @@ function Form() {
         {numChildren?.map((child) => (
           <>
             <Col md={6} className="mb-4" key={child + 'A'}>
+              <label>{`Child ${child} Age`}</label>
               <Input
                 register={register}
                 name={`child${child}Age`}
@@ -212,6 +218,7 @@ function Form() {
               />
             </Col>
             <Col md={6} className="mb-4" key={child + 'B'}>
+              <label>{`Child ${child} Phone Number`}</label>
               <Input
                 register={register}
                 name={`child${child}Number`}
@@ -255,6 +262,7 @@ function Form() {
       {hasInsurance === 'yes' && (
         <Row>
           <Col md={6} className="mb-4">
+            <label>Select Insurance</label>
             <SelectWrapper {...register('insurance', { required: true })}>
               <OptionWrapper value="" disabled selected>
                 Select Insurance
@@ -303,6 +311,7 @@ function Form() {
       {insurance === 'other' && hasInsurance === 'yes' && (
         <Row>
           <Col md={6} className="mb-4">
+            <label>Health Insurance Carrier</label>
             <Input
               register={register}
               name="healthInsuranceCarrier"
@@ -313,6 +322,7 @@ function Form() {
             />
           </Col>
           <Col md={6} className="mb-4">
+            <label>Insurance Carrier Phone Number</label>
             <Input
               register={register}
               name="insuranceCarrierPhone"
