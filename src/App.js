@@ -15,6 +15,9 @@ import WOW from 'wow.js';
 import 'animate.css';
 import useScrollToTop from './hooks/useScrollToTop';
 import TermsAndConitionsPage from './pages/terms-and-conditions';
+import emailjs from 'emailjs-com';
+
+emailjs.init('6VECEH52-Rb5VtRIB');
 function App() {
   const params = useLocation();
   const { height, width } = useScroll();

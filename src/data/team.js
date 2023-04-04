@@ -24,7 +24,7 @@ export const teamMembers = [
   {
     id: 3,
     name: 'Joseph Onyeizu, MBA',
-    status: 'Director of Strategy',
+    status: 'DIRECTOR OF STRATEGY & PROGRAM MANAGEMENT',
     src: Team3,
     alt: 'team image',
   },
@@ -52,15 +52,15 @@ export const teamMembers = [
   {
     id: 7,
     name: 'Jim Ciemny, LCSW',
-    status: 'Secondary education advisor',
+    status: 'Clinical Excellence & Secondary Education Advisor',
     src: Team7,
     alt: 'team image',
   },
-  {
-    id: 8,
-    name: 'Karun Joseph',
-    status: 'Marketing specialist',
-    src: Team8,
-    alt: 'team image',
-  },
+  // {
+  //   id: 8,
+  //   name: 'Karun Joseph',
+  //   status: 'Marketing specialist',
+  //   src: Team8,
+  //   alt: 'team image',
+  // },
 ];

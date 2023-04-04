@@ -176,6 +176,34 @@ export const FacebookIcon = (props) => {
   );
 };
 
+export const CloseIcon = (props) => {
+  return (
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M18 6L6 18"
+        stroke="#3A3A3A"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M6 6L18 18"
+        stroke="#3A3A3A"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
+
 export const YoutubeIcon = (props) => {
   return (
     <svg
@@ -216,6 +244,69 @@ export const TwitterIcon = (props) => {
     >
       <path
         d="M23 1.89503C22.0424 2.51923 20.9821 2.99665 19.86 3.30889C19.2577 2.66897 18.4573 2.21541 17.567 2.00955C16.6767 1.8037 15.7395 1.85548 14.8821 2.15789C14.0247 2.46031 13.2884 2.99877 12.773 3.70044C12.2575 4.40211 11.9877 5.23315 12 6.08115V7.00524C10.2426 7.04735 8.50127 6.68718 6.93101 5.95681C5.36074 5.22644 4.01032 4.14855 3 2.81912C3 2.81912 -1 11.1359 8 14.8323C5.94053 16.1241 3.48716 16.7719 1 16.6804C10 21.3009 21 16.6804 21 6.05343C20.9991 5.79603 20.9723 5.53926 20.92 5.28644C21.9406 4.35634 22.6608 3.18202 23 1.89503Z"
+        stroke="white"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const EmailIcon = (props) => {
+  return (
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"
+        stroke="white"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M22 6L12 13L2 6"
+        stroke="white"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const LinkedinIcon = (props) => {
+  return (
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8Z"
+        stroke="white"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M6 9H2V21H6V9Z"
+        stroke="white"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M4 6C5.10457 6 6 5.10457 6 4C6 2.89543 5.10457 2 4 2C2.89543 2 2 2.89543 2 4C2 5.10457 2.89543 6 4 6Z"
         stroke="white"
         strokeWidth="2"
         strokeLinecap="round"

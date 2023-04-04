@@ -1,23 +1,14 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import Heading from '../components/Heading';
-import Input from '../components/Input';
 import Para from '../components/Para';
-import Button from '../components/Button';
 import { SectionHeader } from '../components/SectionHeader';
 import { Hero, SectionWrapper, SignupPageWrapper } from '../styles';
 import Main from './../assets/signup/1.png';
 import Main2 from './../assets/signup/2.png';
-import { useForm } from 'react-hook-form';
 import Form from '../components/Form';
 
 const SignupPage = () => {
-  const {
-    register,
-    formState: { errors },
-    handleSubmit,
-  } = useForm();
-  const onSubmit = (data) => console.log(data);
   return (
     <SignupPageWrapper>
       <Hero>

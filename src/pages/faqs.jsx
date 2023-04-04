@@ -14,7 +14,7 @@ const FaqPage = () => {
         <Container>
           <Row className="align-items-center h-100vh reverse">
             <Col md={6} className="wow animate__animated animate__fadeInLeft">
-              <Heading main="FAQ’s">about Our Wellness System</Heading>
+              <Heading main="FAQs">about Our Wellness System</Heading>
               <Para>
                 Answers to common questions about our approach to wellness and
                 costs associated with it
@@ -34,7 +34,7 @@ const FaqPage = () => {
         <Container>
           <Row>
             <Col md={5} className="wow animate__animated animate__fadeInLeft">
-              <SectionHeader className="pb-main" title="FAQ’s">
+              <SectionHeader className="pb-main" title="FAQs">
                 Expertly Crafted Answers to Your Mental Wellness Related
                 Questions
               </SectionHeader>

@@ -1,6 +1,5 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
-import Button from '../Button';
 import { NavbarWrapper, NavItem, RecLink } from './styles';
 import Logo from './../../assets/logo/logo.png';
 import { Navbar } from 'react-bootstrap';
@@ -14,7 +13,7 @@ export const Header = (props) => {
     { id: 2, to: '/about', title: 'About' },
     { id: 3, to: '/team', title: 'Team' },
     { id: 4, to: '/join-our-team', title: 'Join our Team' },
-    { id: 5, to: '/faqs', title: "FAQ's" },
+    { id: 5, to: '/faqs', title: 'FAQs' },
   ];
   return (
     <NavbarWrapper>

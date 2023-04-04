@@ -1,14 +1,11 @@
 import React, { useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import { FacebookIcon, TwitterIcon, YoutubeIcon } from '../Icons';
+import { EmailIcon, LinkedinIcon } from '../Icons';
 import Para from '../Para';
 import Logo from './../../assets/logo/dark-logo.png';
 import { CopyRight, FooterWrapper, ReLink, Title, Text } from './styles';
-import { MyModal } from '../Modal';
 
 const Footer = () => {
-  const [show, setShow] = useState(false);
-  const handleShow = () => setShow(true);
   return (
     <>
       <FooterWrapper>
@@ -23,14 +20,19 @@ const Footer = () => {
                 future.
               </Para>
               <div className="mt-4 mb-4">
-                <a className="me-3" href="http://facebook.com" target="_blank">
-                  <FacebookIcon />
+                <a
+                  className="me-3"
+                  href="mailto:panos@dawnhealth.care"
+                  target="_blank"
+                >
+                  <EmailIcon />
                 </a>
-                <a className="me-3" href="http://youtube.com" target="_blank">
-                  <YoutubeIcon />
-                </a>
-                <a className="me-3" href="http://twitter.com" target="_blank">
-                  <TwitterIcon />
+                <a
+                  className="me-3"
+                  href="https://www.linkedin.com/company/dawn-health-care"
+                  target="_blank"
+                >
+                  <LinkedinIcon />
                 </a>
               </div>
             </Col>
