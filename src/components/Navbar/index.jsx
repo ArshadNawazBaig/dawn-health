@@ -10,7 +10,8 @@ export const Header = (props) => {
   const navigate = useNavigate();
   const navLinks = [
     { id: 1, to: '/', title: 'Home' },
-    { id: 2, to: '/about', title: 'About' },
+    { id: 2, to: '/about', title: 'About Us' },
+    { id: 2, to: '/signup', title: 'Signup' },
     { id: 3, to: '/team', title: 'Team' },
     { id: 4, to: '/join-our-team', title: 'Join our Team' },
     { id: 5, to: '/faqs', title: 'FAQs' },

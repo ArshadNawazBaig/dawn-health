@@ -76,7 +76,7 @@ function Form() {
       form_data: formDataJson,
     };
     emailjs
-      .send('service_a3cx6ml', 'template_aap19lq', templateParams)
+      .send('service_mo2rzyj', 'template_azf34qd', templateParams)
       .then((response) => {
         setLoading(false);
         if (response.status == 200) {
