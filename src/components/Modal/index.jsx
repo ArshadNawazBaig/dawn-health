@@ -10,7 +10,7 @@ export const MyModal = ({ show, setShow, handleShow }) => {
         <Modal.Header closeButton>
           <Modal.Title>Contact us via Email</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+        <Modal.Body>Reach us via Email <a >panos@dawnhealth.care</a> </Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close

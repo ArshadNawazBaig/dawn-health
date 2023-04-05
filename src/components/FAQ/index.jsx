@@ -249,7 +249,7 @@ const FaqList = (props) => {
       answer: (
         <Para className="mt-4">
           It's easy. Only parents/guardians can{' '}
-          <Link to="/signup">sign up</Link> for their child. Please, go to the
+          <Link to="/signup">Sign Up</Link> for their child. Please, go to the
           sign-up page and fill out the required information. You will receive a
           follow-up text message to finalize the registration process.
         </Para>

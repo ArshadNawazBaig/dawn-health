@@ -17,7 +17,7 @@ import useScrollToTop from './hooks/useScrollToTop';
 import TermsAndConitionsPage from './pages/terms-and-conditions';
 import emailjs from 'emailjs-com';
 
-emailjs.init('6VECEH52-Rb5VtRIB');
+emailjs.init('WrJDyDO12oscyG2nU');
 function App() {
   const params = useLocation();
   const { height, width } = useScroll();
