@@ -13,6 +13,8 @@ import Partner3 from './../assets/about/s3.png';
 import Partner4 from './../assets/about/s4.png';
 import Partner5 from './../assets/about/s5.png';
 import Partner6 from './../assets/about/s6.png';
+import Partner7 from './../assets/about/s7.png';
+import Partner8 from './../assets/about/s8.png';
 
 const AboutPage = () => {
   return (
@@ -58,17 +60,24 @@ const AboutPage = () => {
             <Col md={6} className="wow animate__animated animate__fadeInRight">
               <SubHeading>Our Story</SubHeading>
               <Para>
-                Founded in 2023 by classmates at Harvard Medical School, Dawn
-                Health is a mental health care venture with a mission to empower
-                adolescents in taking charge of their mental health and help
-                parents/guardians build better relationships with their
-                children.
+                In 2021, a group of brilliant minds at Harvard Medical School
+                had an epiphany: traditional mental healthcare was failing to
+                keep up with the needs of society. So, after a meticulous
+                exploration of the market and countless brainstorming sessions,
+                they decided to take matters into their own hands. Fast-forward
+                to 2023, and Dawn Health was born - a revolutionary mental
+                healthcare venture that focuses on prevention and wellness, not
+                just treating crises.
               </Para>
               <Para>
-                Our use-friendly digital wellness solution offers effective
-                screening, monitoring, and care management systems to
-                proactively prevent mental health crises, reduce care costs, and
-                eliminate barriers to access care.
+                At Dawn Health, we believe that every adolescent deserves to
+                have control over their mental wellbeing, which is why we've
+                developed a state-of-the-art digital-wellness solution. Our
+                platform is user-friendly, accessible, and affordable, making it
+                easier than ever for young people to screen, monitor, and manage
+                their mental health. Say goodbye to sky-high costs and
+                access-to-care barriers - with Dawn Health, the future of mental
+                healthcare is in your hands.
               </Para>
             </Col>
           </Row>
@@ -80,7 +89,7 @@ const AboutPage = () => {
               </SectionHeader>
             </Col>
           </Row>
-          <Row className="pb-main">
+          <Row className="pb-main align-items-end">
             <Col
               sm={6}
               md={4}
@@ -122,6 +131,20 @@ const AboutPage = () => {
               className="mb-4 wow animate__animated animate__zoomIn"
             >
               <img src={Partner6} className="img-fluid" alt="main image" />
+            </Col>
+            <Col
+              sm={6}
+              md={4}
+              className="mb-4 wow animate__animated animate__zoomIn"
+            >
+              <img src={Partner7} className="img-fluid" alt="main image" />
+            </Col>
+            <Col
+              sm={6}
+              md={4}
+              className="mb-4 wow animate__animated animate__zoomIn"
+            >
+              <img src={Partner8} className="img-fluid" alt="main image" />
             </Col>
           </Row>
         </Container>
