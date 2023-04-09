@@ -82,6 +82,30 @@ const AboutPage = () => {
             </Col>
           </Row>
           <Row className="mt-5">
+            <Col md={7} className="wow animate__animated animate__fadeInLeft">
+              <SectionHeader
+                className="pb-main"
+                title="Our Approach to Wellness Care"
+              >
+                Empowering Your Health, Inside and Out - Our Unique Wellness
+                Approach
+              </SectionHeader>
+            </Col>
+          </Row>
+          <Row className="">
+            <Col md={12} className="wow animate__animated animate__fadeInLeft">
+              <iframe
+                width="100%"
+                height="715"
+                src="https://www.youtube.com/embed/j7Ae0lBtuQE"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </Col>
+          </Row>
+          <Row className="mt-5">
             <Col md={5} className="wow animate__animated animate__fadeInLeft">
               <SectionHeader className="pb-main" title="Our Proud Partners">
                 Collaborating to build a better future, our partners are the
