@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Route, Routes, useLoc, useLocation } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import Footer from './components/Footer';
 import { Header } from './components/Navbar';
 import useScroll from './hooks/useScroll';
