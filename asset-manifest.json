@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/dawn-health/static/css/main.32d2eada.css",
+    "main.js": "/dawn-health/static/js/main.745d3e22.js",
+    "static/js/787.42fa1ae3.chunk.js": "/dawn-health/static/js/787.42fa1ae3.chunk.js",
+    "static/media/animated-1.gif": "/dawn-health/static/media/animated-1.366a56fc80dda3f6a034.gif",
+    "static/media/2.png": "/dawn-health/static/media/2.f96d8e8d257a11b82da1.png",
+    "static/media/1.png": "/dawn-health/static/media/1.96628db156a694d76c11.png",
+    "static/media/3.png": "/dawn-health/static/media/3.c3af370b53a1b5926c02.png",
+    "static/media/4.png": "/dawn-health/static/media/4.880c1179f95b895e6da9.png",
+    "static/media/7.png": "/dawn-health/static/media/7.9165214fba9b8440c704.png",
+    "static/media/6.png": "/dawn-health/static/media/6.eb8426a36f1d9ba006a9.png",
+    "static/media/8.png": "/dawn-health/static/media/8.c9ee0366af8906ea64f1.png",
+    "static/media/5.png": "/dawn-health/static/media/5.bce13ca431870f72a039.png",
+    "static/media/s1.png": "/dawn-health/static/media/s1.50a671f35ad5149aa718.png",
+    "static/media/s3.png": "/dawn-health/static/media/s3.dcb7e6808ae3c634d0d4.png",
+    "static/media/s2.png": "/dawn-health/static/media/s2.b6529cf4f662af054128.png",
+    "static/media/s8.png": "/dawn-health/static/media/s8.f3ed100018163a792ae1.png",
+    "static/media/s5.png": "/dawn-health/static/media/s5.22ff9909847276149224.png",
+    "static/media/s6.png": "/dawn-health/static/media/s6.0b24b6277872c5064c97.png",
+    "static/media/dark-logo.png": "/dawn-health/static/media/dark-logo.b1b958a6cb0cbae87f36.png",
+    "index.html": "/dawn-health/index.html",
+    "main.32d2eada.css.map": "/dawn-health/static/css/main.32d2eada.css.map",
+    "main.745d3e22.js.map": "/dawn-health/static/js/main.745d3e22.js.map",
+    "787.42fa1ae3.chunk.js.map": "/dawn-health/static/js/787.42fa1ae3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.32d2eada.css",
+    "static/js/main.745d3e22.js"
+  ]
+}
