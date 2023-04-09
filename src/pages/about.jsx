@@ -81,7 +81,7 @@ const AboutPage = () => {
               </Para>
             </Col>
           </Row>
-          <Row>
+          <Row className="mt-5">
             <Col md={5} className="wow animate__animated animate__fadeInLeft">
               <SectionHeader className="pb-main" title="Our Proud Partners">
                 Collaborating to build a better future, our partners are the
