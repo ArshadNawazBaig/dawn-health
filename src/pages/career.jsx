@@ -213,7 +213,8 @@ const CareerPage = () => {
                   And for Contracting [1099] Opportunities:
                   <List className="mt-3">
                     <ListItem className="pb-3">
-                      Reimbursement of $75-$80 per session.
+                      Reimbursement up to $85 per session, dependent on
+                      licensure, skillset, and capacity.
                     </ListItem>
                     <ListItem className="pb-3">
                       Malpractice liability insurance.

@@ -123,20 +123,6 @@ const AboutPage = () => {
               md={4}
               className="mb-4 wow animate__animated animate__zoomIn"
             >
-              <img src={Partner5} className="img-fluid" alt="main image" />
-            </Col>
-            <Col
-              sm={6}
-              md={4}
-              className="mb-4 wow animate__animated animate__zoomIn"
-            >
-              <img src={Partner6} className="img-fluid" alt="main image" />
-            </Col>
-            <Col
-              sm={6}
-              md={4}
-              className="mb-4 wow animate__animated animate__zoomIn"
-            >
               <img src={Partner7} className="img-fluid" alt="main image" />
             </Col>
             <Col

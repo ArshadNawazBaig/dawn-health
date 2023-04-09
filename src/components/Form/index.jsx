@@ -71,9 +71,16 @@ function Form() {
 
   const sendEmail = (data, reset) => {
     setLoading(true);
-    let formDataJson = JSON.stringify(data);
+    let result = '';
+    for (const [key, value] of Object.entries(data)) {
+      const formattedKey = key
+        .replace(/([a-z])([A-Z])/g, '$1 $2')
+        .replace(/^\w/, (c) => c.toUpperCase());
+      result += `${formattedKey}: ${value}\n`;
+    }
+
     let templateParams = {
-      form_data: formDataJson,
+      form_data: result,
     };
     emailjs
       .send('service_mo2rzyj', 'template_azf34qd', templateParams)
@@ -140,11 +147,11 @@ function Form() {
       </Row>
       <Row>
         <Col md={6} className="mb-4">
-          <label>Phone Number</label>
+          <label>Parent's Phone Number</label>
           <Input
             register={register}
-            name="phoneNumber"
-            placeholder="Phone Number"
+            name="parentPhoneNumber"
+            placeholder="Parent's Phone Number"
             validation={{ required: true }}
             errors={errors}
           />
