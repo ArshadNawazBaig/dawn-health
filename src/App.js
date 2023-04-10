@@ -39,7 +39,7 @@ function App() {
       />
       <Body>
         <Routes>
-          <Route exact path="/" element={<HomePage />}></Route>
+          <Route exact path="/dawn-health" element={<HomePage />}></Route>
           <Route exact path="/team" element={<TeamPage />}></Route>
           <Route exact path="/about" element={<AboutPage />}></Route>
           <Route exact path="/faqs" element={<FaqPage />}></Route>
